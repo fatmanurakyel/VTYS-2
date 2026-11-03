@@ -1,0 +1,11 @@
+# VTYS-2-- Yöntem 1: Doğrudan Değişkenle Birleştirip Çalıştırma
+DECLARE @tablo VARCHAR(20)
+SET @tablo = 'KITAPLAR'
+EXECUTE('SELECT * FROM ' + @tablo)
+
+-- Yöntem 2: Sorgu Metnini Ayrı Değişkende Oluşturup Çalıştırma
+DECLARE @tablo VARCHAR(20)
+DECLARE @Sorgu VARCHAR(MAX)
+SET @tablo = 'KITAPLAR'
+SET @Sorgu = 'SELECT * FROM ' + @tablo
+EXECUTE(@Sorgu)
