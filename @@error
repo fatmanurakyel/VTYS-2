@@ -1,0 +1,13 @@
+KİTAP_YAZAR YERİNDEN SİLİN yazar_no = 2
+IF @@error<> 0
+BAŞLANGIÇ
+YAZDIR('Hata Oluştu')
+DÖNÜŞ
+SONU
+
+YAZARLAR NEREDEN SİLİN yazar_no = 2
+IF @@error<> 0
+BAŞLANGIÇ
+YAZDIR('Hata Oluştu')
+DÖNÜŞ
+SONU
